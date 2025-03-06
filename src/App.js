@@ -1,5 +1,4 @@
 import './App.css';
-import Manillas from './Manillas';
 import Productos from './Productos';
 import Redes from './Redes';
 import Heraderimg from './Imagenes/pus.png';
