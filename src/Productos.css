@@ -1,0 +1,55 @@
+.ConProducto{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio */
+    gap: 10px; /* Espaciado entre elementos */
+    padding-top: 170px;
+    
+}
+
+.Contec {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los cuadros pasen a la siguiente línea */
+    gap: 20px; /* Espaciado entre cuadros */
+}
+
+.Cuadros {
+    width: calc((100% - 60px) / 3); /* Cada cuadro ocupa 1/3 del ancho del contenedor, ajustado con el gap */
+    max-width: 300px; /* Ancho máximo del cuadro */
+    height: auto; /* Ajuste dinámico de la altura */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+    border: 1px solid rgb(238, 206, 139); /* Borde opcional */
+    flex-direction: column;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(226, 204, 131, 0.3); /* Sombra opcional */
+    padding: 5px; /* Espaciado interno */
+}
+
+
+.ImagenPro{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    align-self: center;
+    object-fit: contain;
+    border-radius: 10px; 
+}
+
+.PrecioPro,.CantidadPro{
+        font-family: 'Lora', serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+}

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Manillas from './Manillas';
+import Productos from './Productos';
+import Redes from './Redes';
+import Heraderimg from './Imagenes/pus.png';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Laura te quiero 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='header'>
+        <div className='header-content'>
+        <img src={Heraderimg} className='herader-img' alt="Producto destacado"/>
+        <h1 className='header-titu'> Manillas y accesosrios</h1>
+        </div>
       </header>
+      <Productos />
+      <Redes />
     </div>
   );
 }
