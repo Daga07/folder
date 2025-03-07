@@ -8,7 +8,7 @@
     justify-content: center;
     flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio */
     gap: 10px; /* Espaciado entre elementos */
-    padding-top: 170px;
+    padding-top: 200px;
     
 }
 

@@ -1,41 +1,78 @@
 .App {
   text-align: center;
 }
+/* ENCABEZADO PRINCIPAL */
 .header {
+  display: flex;
   justify-content: center; /* Centra el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */
-  display: flex;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-  gap: 20px;
-  position: fixed; /* Fija el elemento en la pantalla */
-  top: 0; /* Lo sitúa en la parte superior */
-  left: 0; /* Lo sitúa al inicio horizontal */
-  right: 0; /* Lo sitúa al final horizontal */
-  z-index: 1000; /* Opcional: para asegurar que esté sobre otros elementos */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px; /* Un poco más alto para mejor visibilidad */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #0f0808, #130d0a); /* Degradado moderno */
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2); /* Sutil borde inferior */
 }
 
-.header-content{
-  width: 97%;
+/* CONTENIDO DEL ENCABEZADO */
+.header-content {
+  width: 95%;
+  max-width: 1200px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 20px;
-  justify-content: flex-start;
-  background-color: #ffffff;
-  padding: 10px;
-  flex-wrap: wrap;
-  object-fit: contain;
+  justify-content: space-between; /* Distribuye mejor los elementos */
+  background: rgba(5, 5, 5, 0.15);
+  padding: 12px 25px;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.header-titu{
+
+/* TITULO DEL HEADER */
+.header-titu {
   font-family: 'Lora', serif;
-  font-size: 29px;
+  font-size: clamp(18px, 3vw, 26px); /* Ajuste dinámico del tamaño */
   font-weight: bold;
-  color: rgb(0, 0, 0);
-  object-fit: contain;
+  color: #ffffff; /* Blanco para mejor contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para resaltar */
+  transition: all 0.3s ease-in-out;
 }
+
+/* IMAGEN DEL HEADER */
 .herader-img{
-  width: 150px; /* Ancho de la imagen */
-  height: auto; /* Ajusta la altura automáticamente */
+  width: 60%; /* Se adapta al contenedor */
+  max-width: 200px; /* No crece más de 150px */
+  height: auto; /* Mantiene la proporción */
   border-radius: 10px; /* Bordes redondeados */
-  object-fit: contain;
+  object-fit: contain; /* Mantiene la imagen sin recortar */
+} 
+
+.header-img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}
+
+/* RESPONSIVIDAD PARA MÓVILES */
+@media (max-width: 600px) {
+  .header {
+    height: 60px;
+    padding: 8px 15px;
+  }
+
+  .header-content {
+    padding: 8px 15px;
+    gap: 10px;
+  }
+
+  .header-titu {
+    font-size: clamp(16px, 4vw, 22px);
+  }
+
+  .header-img {
+    max-width: 120px;
+  }
 }
