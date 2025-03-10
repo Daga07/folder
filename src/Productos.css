@@ -1,55 +1,95 @@
-.ConProducto{
+.ConProducto {
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio */
-    gap: 10px; /* Espaciado entre elementos */
-    padding-top: 200px;
-    
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 100px;
+    background: linear-gradient(135deg, black, hsl(314, 94%, 6%)); /* Negro a morado oscuro */
+    border-radius: 10px;
+    padding-bottom: 50px;
 }
 
 .Contec {
-    width: 70%;
+    width: 80%;
     height: auto;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 55px;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los cuadros pasen a la siguiente línea */
-    gap: 20px; /* Espaciado entre cuadros */
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
+/* Estilos de los cuadros */
 .Cuadros {
-    width: calc((100% - 60px) / 3); /* Cada cuadro ocupa 1/3 del ancho del contenedor, ajustado con el gap */
-    max-width: 300px; /* Ancho máximo del cuadro */
-    height: auto; /* Ajuste dinámico de la altura */
-    display: flex;
-    align-items: center; /* Centra el texto verticalmente */
-    border: 1px solid rgb(238, 206, 139); /* Borde opcional */
-    flex-direction: column;
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 2px 2px 5px rgba(226, 204, 131, 0.3); /* Sombra opcional */
-    padding: 5px; /* Espaciado interno */
-}
-
-
-.ImagenPro{
-    width: 100%;
-    max-width: 300px;
+    width: 280px;
     height: auto;
     display: flex;
-    align-self: center;
-    object-fit: contain;
-    border-radius: 10px; 
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(238, 206, 139, 0.7); /* Borde dorado */
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(226, 204, 131, 0.3);
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
-.PrecioPro,.CantidadPro{
-        font-family: 'Lora', serif;
-        font-size: 18px;
-        font-weight: bold;
-        color: rgb(0, 0, 0);
+.Cuadros:hover {
+    transform: scale(1.05);
+}
+
+/* Carrusel de imágenes */
+.Carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ImagenPro {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Flechas del carrusel */
+.BotonCarrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.BotonCarrusel:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.BotonIzq { left: 5px; }
+.BotonDer { right: 5px; }
+
+/* Estilos del precio y cantidad */
+.PrecioPro, .CantidadPro {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: cent
 }
