@@ -27,6 +27,72 @@ const productos = [
         precio: "$15.000",
         disponible: "6 unidades",
     },
+    {   
+        id1: 1,
+        imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$10.000",
+        disponible: "5 unidades",
+    },
+    {
+        id1: 2,
+        imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$15.000",
+        disponible: "3 unidades",
+    },
+    {
+        id1: 3, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$12.000",
+        disponible: "7 unidades",
+    },
+    {
+        id1: 4, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$15.000",
+        disponible: "6 unidades",
+    },
+    {   
+        id2: 1,
+        imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$10.000",
+        disponible: "5 unidades",
+    },
+    {
+        id2: 2,
+        imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$15.000",
+        disponible: "3 unidades",
+    },
+    {
+        id2: 3, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$12.000",
+        disponible: "7 unidades",
+    },
+    {
+        id2: 4, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$15.000",
+        disponible: "6 unidades",
+    },
+    {   
+        id3: 1,
+        imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$10.000",
+        disponible: "5 unidades",
+    },
+    {
+        id3: 2,
+        imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$15.000",
+        disponible: "3 unidades",
+    },
+    {
+        id3: 3, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$12.000",
+        disponible: "7 unidades",
+    },
+    {
+        id3: 4, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
+        precio: "$15.000",
+        disponible: "6 unidades",
+    },
 ];
 
 function Productos() {
@@ -45,22 +111,9 @@ function Productos() {
         <div className="ConProducto">
             <div className="Contec">
                 {productos.map((producto, index) => (
-                    <div className="Cuadros" key={producto.id}>
+                    <div className="Cuadros" key={producto.id1}>
                         <div className="Carrusel">
-                            <img className="ImagenPro" src={producto.imagenes[indices[index]]} alt={`Producto ${producto.id}`} />
-                            <button className="BotonCarrusel BotonIzq" onClick={() => cambiarImagen(-1, index)}>❮</button>
-                            <button className="BotonCarrusel BotonDer" onClick={() => cambiarImagen(1, index)}>❯</button>
-                        </div>
-                        <p className="PrecioPro">{producto.precio}</p>
-                        <p className="CantidadPro">Disponible: {producto.disponible}</p>
-                    </div>
-                ))}
-            </div>
-            <div className="Contec">
-                {productos.map((producto, index) => (
-                    <div className="Cuadros" key={producto.id}>
-                        <div className="Carrusel">
-                            <img className="ImagenPro" src={producto.imagenes[indices[index]]} alt={`Producto ${producto.id}`} />
+                            <img className="ImagenPro" src={producto.imagenes[indices[index]]} alt={`Producto ${producto.id1}`} />
                             <button className="BotonCarrusel BotonIzq" onClick={() => cambiarImagen(-1, index)}>❮</button>
                             <button className="BotonCarrusel BotonDer" onClick={() => cambiarImagen(1, index)}>❯</button>
                         </div>
