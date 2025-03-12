@@ -24,9 +24,9 @@ const productos = [
     },
     {
         id: 4, imagenes: [Heraderimg, Heraderimg1, Heraderimg2],
-        precio: "$20.000",
-        disponible: "2 unidades",
-    }
+        precio: "$15.000",
+        disponible: "6 unidades",
+    },
 ];
 
 function Productos() {

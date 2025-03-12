@@ -7,9 +7,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 100px;
     background: linear-gradient(135deg, black, hsl(314, 94%, 6%)); /* Negro a morado oscuro */
-    border-radius: 10px;
+    padding: 140px 20px;
     padding-bottom: 50px;
 }
 
@@ -91,5 +90,30 @@
     font-size: 18px;
     font-weight: bold;
     color: white;
-    text-align: cent
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* RESPONSIVIDAD PARA MÓVILES */
+@media (max-width: 600px) {
+    .Contec {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 3 cuadros por fila */
+        gap: 15px; /* Espaciado entre cuadros */
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .Cuadros {
+        width: 150px; /* Tamaño más pequeño para encajar dos cuadros */
+        padding: 10px;
+    }
+
+    .ImagenPro {
+        height: 120px; /* Reducir el tamaño de la imagen */
+    }
+
+    .PrecioPro, .CantidadPro {
+        font-size: 14px;
+    }
 }
