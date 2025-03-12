@@ -42,7 +42,7 @@
 
 /* IMAGEN DEL HEADER */
 .herader-img{
-  width: 60%; /* Se adapta al contenedor */
+  width: 30%; /* Se adapta al contenedor */
   max-width: 200px; /* No crece más de 150px */
   height: auto; /* Mantiene la proporción */
   border-radius: 10px; /* Bordes redondeados */
@@ -56,7 +56,7 @@
 /* RESPONSIVIDAD PARA MÓVILES */
 @media (max-width: 600px) {
   .header {
-    height: 60px;
+    height: 40px;
     padding: 8px 15px;
   }
 
