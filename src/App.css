@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap');
+
 .App {
   text-align: center;
 }
+
 /* ENCABEZADO PRINCIPAL */
 .header {
   display: flex;
@@ -32,14 +35,24 @@
 
 /* TITULO DEL HEADER */
 .header-titu {
-  font-family: 'Lora', serif;
-  font-size: clamp(18px, 3vw, 26px); /* Ajuste dinámico del tamaño */
+  font-family: 'Lora', serif; /* Fuente más elegante */
+  font-size: clamp(22px, 4vw, 32px); /* Ajuste dinámico mejorado */
   font-weight: bold;
   color: #ffffff; /* Blanco para mejor contraste */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para resaltar */
-  transition: all 0.3s ease-in-out;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada para resaltar */
+  letter-spacing: 1.5px; /* Espaciado entre letras para elegancia */
+  text-transform: uppercase; /* Mayúsculas para dar más presencia */
+  background: linear-gradient(90deg,#030002, #3a0035 ); /* Degradado sutil para más estilo */
+  padding: 10px 20px; /* Espaciado para mejor presentación */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Efecto al pasar el mouse */
+.header-titu:hover {
+  transform: scale(1.05); /* Efecto de leve aumento */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
 /* IMAGEN DEL HEADER */
 .herader-img{
   width: 30%; /* Se adapta al contenedor */
